@@ -1,0 +1,4 @@
+/* Copy this file to: ~/.config/gtk-3.0/gtk.css
+ * It fixes the weird white borders around certain gtk3 apps.*/
+
+.window-frame { box-shadow: none; margin: 0 }
