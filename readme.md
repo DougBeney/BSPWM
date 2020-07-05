@@ -15,3 +15,10 @@ My simple BSPWM configuration.
 - bspwm - Tiling window manager
 - sxhkd - Hotkey daemon
 - polybar - The Panel
+
+**Optional Dependencies:**
+
+- termite - Terminal (binded to super+return)
+- rofi - Program launcher (binded to super+space)
+- picom (Formerly compton. A compositor.)
+- hsetroot (flat color background)
