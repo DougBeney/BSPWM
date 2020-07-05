@@ -7,7 +7,7 @@ My simple BSPWM configuration.
 
 **Features:**
 
-- Cryptocurrency priecs in top panel
+- Cryptocurrency prices in top panel
 - Better window rules using my custom external-rules.py script
 
 **Dependencies:**
@@ -18,7 +18,7 @@ My simple BSPWM configuration.
 
 **Optional Dependencies:**
 
-- termite - Terminal (binded to super+return)
-- rofi - Program launcher (binded to super+space)
+- termite - Terminal (bound to super+return)
+- rofi - Program launcher (bound to super+space)
 - picom (Formerly compton. A compositor.)
 - hsetroot (flat color background)
