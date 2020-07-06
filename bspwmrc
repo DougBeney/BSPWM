@@ -3,13 +3,14 @@
 # Startup programs
 sxhkd -c ~/.config/bspwm/sxhkdrc &
 picom &
+dunst &
 redshift &
 polybar -c ~/.config/bspwm/polybar dougbar &
 
 synclient TapButton1=0 &
-synclient VertScrollDelta=-50&
+synclient VertScrollDelta=-40 &
 synclient HorizTwoFingerScroll=1 &
-synclient HorizScrollDelta=-200 &
+synclient HorizScrollDelta=-20 &
 synclient TapButton3=0 &
 synclient TapButton2=0 &
 synclient CoastingFriction=0 &
