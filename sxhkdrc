@@ -36,7 +36,7 @@ super + shift + {F9,F10}
       amixer -D pulse sset Master {5%-,5%+}
 
 super + shift + {F8, F11, F12}
-      palyerctl {play-pause, previous, next}
+      playerctl {play-pause, previous, next}
 
 {XF86AudioPlay, XF86AudioPrev, XF86AudioNext}
       palyerctl {play-pause, previous, next}
