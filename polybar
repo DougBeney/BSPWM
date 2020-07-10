@@ -39,10 +39,10 @@ module-margin-right = 2
 # font-2 = siji:pixelsize=10;1
 # font-3 = siji:pixelsize=8;1
 
-font-0 = IBM Plex Mono:fontformat=truetype:size=8:antialias=false;0
-font-1 = IBM Plex Mono:fontformat=truetype:size=8:antialias=false;0
-font-2 = IBM Plex Mono:fontformat=truetype:size=8:antialias=false;0
-font-3 = IBM Plex Mono:fontformat=truetype:size=8:antialias=false;0
+font-0 = Fira Code:fontformat=truetype:size=12:antialias=true;0
+font-1 = Fira Code:fontformat=truetype:size=12:antialias=true;0
+font-2 = Fira Code:fontformat=truetype:size=12:antialias=true;0
+font-3 = Fira Code:fontformat=truetype:size=12:antialias=true;0
 
 modules-left = bspwm
 ;modules-center = mpd
