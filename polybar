@@ -40,9 +40,8 @@ module-margin-right = 2
 # font-3 = siji:pixelsize=8;1
 
 font-0 = Fira Code:fontformat=truetype:size=12:antialias=true;0
-font-1 = Fira Code:fontformat=truetype:size=12:antialias=true;0
-font-2 = Fira Code:fontformat=truetype:size=12:antialias=true;0
-font-3 = Fira Code:fontformat=truetype:size=12:antialias=true;0
+font-1 = FontAwesome:style=Regular:pixelsize=12;0
+font-2 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:pixelsize=12;0
 
 modules-left = bspwm
 ;modules-center = mpd
@@ -75,22 +74,6 @@ interval=90
 type = internal/xwindow
 label = %title:0:30:...%
 
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
-
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
-
 [module/filesystem]
 type = internal/fs
 interval = 25
@@ -104,24 +87,29 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %index%
+ws-icon-0 = 1;1
+ws-icon-1 = 2;2
+ws-icon-2 = 3;3
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+
+label-focused = %icon%
+label-occupied = %icon%
+label-empty = %icon%
+
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
-
-label-occupied = %index%
+label-empty-padding = 2
 label-occupied-padding = 2
 
-label-urgent = %index%!
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
-
-label-empty = %index%
-label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
-
-; Separator in between workspaces
-; label-separator = |
+label-separator = " "
+label-separator-padding = 0
 
 [module/i3]
 type = internal/i3
