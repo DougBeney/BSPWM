@@ -1,18 +1,20 @@
 [colors]
-background = #000
-background-alt = #444
-foreground = #dfdfdf
+background = #282a36
+background-alt = #44475a
+foreground = #f8f8f2
 foreground-alt = #555
 
-primary = #ffb52a
+primary = #6272a4
 secondary = #e60053
 alert = #bd2c40
+
+cryptoprices_foreground = #e60053
 
 [bar/dougbar]
 dpi = -1
 width = 100%
-height = 25
-radius = 6.0
+height = 30
+radius = 0
 fixed-center = false
 
 background = ${colors.background}
@@ -25,24 +27,22 @@ border-size = 4
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 0
 
-module-margin-left = 1
+module-margin-left = 0
 module-margin-right = 2
 
-# font-0 = IBM Plex Mono:pixelsize=10;1
-# font-1 = IBM Plex Mono:fontformat=truetype:size=8:antialias=false;0
-# font-2 = siji:pixelsize=10;1
-# font-3 = siji:pixelsize=8;1
-
-font-0 = Fira Code:fontformat=truetype:size=12:antialias=true;0
-font-1 = FontAwesome:style=Regular:pixelsize=12;0
-font-2 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:pixelsize=12;0
+font-0 = Fira Code:fontformat=truetype:size=11:antialias=true;2
+font-1 = FontAwesome:style=Regular:pixelsize=13;1
+font-2 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:pixelsize=12;2
+; Cryptoprices module font
+;font-3 = Roboto-Medium.ttf: Roboto:style=Medium:size=14:antialias=true;2
+font-3 = Fira Code:fontformat=truetype:size=11:antialias=true;2
 
 modules-left = bspwm
 ;modules-center = mpd
 modules-right = cryptoprices xbacklight pulseaudio battery date powermenu
-
+bottom = true
 tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
@@ -65,6 +65,7 @@ cursor-scroll = ns-resize
 type=custom/script
 exec=~/.config/bspwm/cryptoprices.py
 interval=90
+format-foreground = #000000
 
 [module/xwindow]
 type = internal/xwindow
