@@ -5,19 +5,25 @@ super + Return
 	termite
 
 super + e
-	emacsclient -c
+        emacs
 
 super + shift + Return
 	firefox
 
+#ctrl + alt + Return
+#	nautilus
+
 ctrl + alt + Return
-	nautilus
+	dolphin
 
 super + c
 	gnome-calculator
 
 super + @space
 	rofi -show drun
+
+super + d
+	rofi -show windowcd
 
 # Reload sxhkd
 super + Escape
