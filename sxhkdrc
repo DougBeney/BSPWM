@@ -16,7 +16,7 @@ super + shift + Return
 ctrl + alt + Return
 	dolphin
 
-super + c
+{super+c, XF86Calculator}
 	gnome-calculator
 
 super + @space
