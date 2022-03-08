@@ -2,10 +2,13 @@ super + shift + Escape
       bspc quit
 
 super + Return
-	termite
+	alacritty
 
 super + e
         emacs
+
+super + shift + e
+        emojipick
 
 super + shift + Return
 	firefox
