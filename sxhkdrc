@@ -2,7 +2,7 @@ super + shift + Escape
       bspc quit
 
 super + Return
-	alacritty
+	emacsclient -e '(dougbeney/smart-ansi-term)' -c
 
 super + e
         emacs
